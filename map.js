@@ -4,7 +4,7 @@ var map;
 var geoJSON;
 var request;
 var gettingData = false;
-var openWeatherMapKey = "c290585c590e9e51824e97d5d44f4269"
+var openWeatherMapKey = "xxxxxx"
 function initialize(lat,lng) {
   if( lat==null || lng == null){
     lat=40.73;
