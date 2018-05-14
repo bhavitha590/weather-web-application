@@ -1,5 +1,5 @@
 var weatherBaseURL = 'http://api.openweathermap.org/data/2.5/weather?';
-var api_key = '&units=imperial&APPID=c290585c590e9e51824e97d5d44f4269';
+var api_key = '&units=imperial&APPID=xxxxx';
 var weather5daysBaseURL = 'http://api.openweathermap.org/data/2.5/forecast?';
 
 //function that will generate an HTML string and then adds it to the webpage  to display current weather
