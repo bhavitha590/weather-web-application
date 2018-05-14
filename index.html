@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Weather App</title>
+		<meta charset="utf-8"/>
+		<meta name = "viewport" content ="width=device-width">
+		<link rel= "stylesheet" type="text/css" href="style.css"/>
+	</head>
+
+	<body>
+		<div class="header">
+		  <h1>Weather Information</h1>
+		</div>
+
+		<div class="topnav">
+			<input id = "city_query" type="text" name="search" placeholder="city..">	
+  			<input id = "zipcode_query" type="text" name="zipCode" placeholder="zipcode..">
+  			<input id = "gps_query" type="text" name="gpsCoord" placeholder="lat,lng">
+		</div>
+
+		<h2> Current Weather</h2>
+
+		<div class = "row" >
+			<!-- division which displays current weather -->
+			<div class="column" id="current_weather_results" style = "background-color:#a8d8fd;"> 
+			</div>
+			<!-- Division which shows map -->
+			<div class="column" id="map-canvas">
+			</div>
+		</div>
+
+		<div>
+			<h2>5 days forecast</h2>
+		</div>
+		<!-- Table to display 5 days weather forcast -->
+		<div class= "five_days_weather" id = "five_days_weather_results">
+			<table align = "center">
+				<thead>
+				  <tr>
+				    <th>Day</th>
+				    <th>Description</th>
+				    <th>Temperature (F)</th>
+				    <th>Pressure (hPa)</th>
+				    <th>Humidity (%)</th>
+				    <th>Wind speed (miles/hr)</th>
+				  </tr>
+			  	</thead>
+			  	<tbody>
+			  	</tbody>
+			</table>
+		</div>
+		
+		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+		<script src= "map.js"></script>
+		<script src= "script.js"></script>
+	</body>
+
+</html>
